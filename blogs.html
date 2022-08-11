@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首頁</title>
+    <title>部落格</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet"
@@ -15,18 +15,30 @@
 
 <body>
 <nav class="bg-maroon">
-    <div class="container flex justify-between items-center h-20">
+    <div class="container flex justify-between items-center h-20 relative">
         <a href="index.html" class="w-20">
             <img src="assets/images/logo-white.png" alt="logo">
         </a>
-        <a href="#" class="block md:hidden">
+        <a href="#" class="menu block md:hidden">
             <span class="material-symbols-outlined text-white text-[40px]">menu</span>
         </a>
-        <ul class="hidden md:flex text-lg">
-            <li><a class="text-white block hover:opacity-40 px-8" href="product-optical.html">系列鏡框</a></li>
-            <li><a class="text-white block hover:opacity-40 px-8" href="stores.html">門市據點</a></li>
-            <li><a class="text-white block hover:opacity-40 px-8" href="blogs.html">部落格</a></li>
-            <li><a class="text-white block hover:opacity-40 pl-8" href="questions.html">常見問題</a></li>
+        <ul class="dropdown absolute left-0 top-full w-full max-h-0 transition-all duration-500 overflow-hidden bg-maroon flex flex-wrap md:text-lg">
+            <li class="border border-white w-1/2 text-center py-3">
+                <a class="text-white block hover:opacity-40 px-8"
+                   href="product-optical.html">系列鏡框</a>
+            </li>
+            <li class="border border-l-0 border-white w-1/2 text-center py-3" >
+                <a class="text-white block hover:opacity-40 px-8"
+                   href="stores.html">門市據點</a>
+            </li>
+            <li class="border border-white w-1/2 text-center py-3">
+                <a class="text-white block hover:opacity-40 px-8"
+                   href="blogs.html">部落格</a>
+            </li>
+            <li class="border border-l-0 border-white w-1/2 text-center py-3">
+                <a class="text-white block hover:opacity-40 pl-8"
+                   href="questions.html">常見問題</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -66,9 +78,13 @@
 <section class="container mb-16 md:mb-20 lg:mb-[124px]">
     <ul class="flex flex-col gap-y-6 lg:gap-y-[60px]">
         <li class="flex flex-col md:flex-row md:gap-x-6">
-            <img src="./assets/images/blog-1.png" alt="blog-1" class="mb-2 md:w-1/2">
+            <a href="blog.html" class="block mb-2 md:w-1/2">
+                <img src="./assets/images/blog-1.png" alt="blog-1">
+            </a>
             <div class="md:w-1/2">
-                <h3 class="text-maroon-dark text-xl lg:text-[32px]">情人特別企劃</h3>
+                <h3 class="text-maroon-dark text-xl lg:text-[32px]">
+                    <a href="blog.html">情人特別企劃</a>
+                </h3>
                 <div class="flex justify-between mb-1 lg:mb-4">
                     <p class="font-medium lg:text-lg">2020 Valentine's Special</p>
                     <time class="font-medium">2020/02/14</time>
@@ -82,9 +98,11 @@
             </div>
         </li>
         <li class="flex flex-col md:flex-row md:gap-x-6">
-            <img src="./assets/images/blog-2.png" alt="blog-2" class="mb-2 md:w-1/2">
+            <a href="blog.html" class="mb-2 md:w-1/2">
+                <img src="./assets/images/blog-2.png" alt="blog-2">
+            </a>
             <div class="md:w-1/2">
-                <h3 class="text-maroon-dark text-xl lg:text-[32px]">街頭潮人訪問</h3>
+                <h3 class="text-maroon-dark text-xl lg:text-[32px]"><a href="blog.html">街頭潮人訪問</a></h3>
                 <div class="flex justify-between mb-1 lg:mb-4">
                     <p class="font-medium  lg:text-lg">Street Interview</p>
                     <time class="font-medium">2020/02/02</time>
@@ -98,9 +116,11 @@
             </div>
         </li>
         <li class="flex flex-col md:flex-row md:gap-x-6">
-            <img src="./assets/images/blog-3.png" alt="blog-3" class="mb-2 md:w-1/2">
+            <a href="blog.html" class="mb-2 md:w-1/2">
+                <img src="./assets/images/blog-3.png" alt="blog-3" class="mb-2 md:w-1/2">
+            </a>
             <div class="md:w-1/2">
-                <h3 class="text-maroon-dark text-xl lg:text-[32px]">春季新品上市</h3>
+                <h3 class="text-maroon-dark text-xl lg:text-[32px]"><a href="blog.html">春季新品上市</a></h3>
                 <div class="flex justify-between mb-1 lg:mb-4">
                     <p class="font-medium  lg:text-lg">New Selection</p>
                     <time class="font-medium">2020/02/02</time>
@@ -113,9 +133,11 @@
             </div>
         </li>
         <li class="flex flex-col md:flex-row md:gap-x-6">
-            <img src="./assets/images/blog-4.png" alt="blog-4" class="mb-2 md:w-1/2">
+            <a href="blog.html" class="mb-2 md:w-1/2">
+                <img src="./assets/images/blog-4.png" alt="blog-4">
+            </a>
             <div class="md:w-1/2">
-                <h3 class="text-maroon-dark text-xl lg:text-[32px]">設計師獨享鏡框優惠</h3>
+                <h3 class="text-maroon-dark text-xl lg:text-[32px]"><a href="blog.html">設計師獨享鏡框優惠</a></h3>
                 <div class="flex justify-between mb-1 lg:mb-4">
                     <p class="font-medium lg:text-lg">Sales for Designer</p>
                     <time class="font-medium">2020/01/18</time>
@@ -130,9 +152,11 @@
             </div>
         </li>
         <li class="flex flex-col md:flex-row md:gap-x-6">
-            <img src="./assets/images/blog-5.png" alt="blog-5" class="mb-2 md:w-1/2">
+            <a href="blog.html" class="mb-2 md:w-1/2">
+                <img src="./assets/images/blog-5.png" alt="blog-5">
+            </a>
             <div class="md:w-1/2">
-                <h3 class="text-maroon-dark text-xl lg:text-[32px]">抵抗夏日大作戰</h3>
+                <h3 class="text-maroon-dark text-xl lg:text-[32px]"><a href="blog.html">抵抗夏日大作戰</a></h3>
                 <div class="flex justify-between mb-1 lg:mb-4">
                     <p class="font-medium lg:text-lg">Summer Special</p>
                     <time class="font-medium">2019/08/07</time>
@@ -179,7 +203,7 @@
                         </a>
                     </li>
                     <li class="flex items-center text-base hover:opacity-40">
-                        <span class="material-symbols-outlined text-white mr-2 md:text-[36px] md:mr-5">email</span>
+                        <span class="material-symbols-outlined text-white mr-2 md:text-2xl md:mr-5">email</span>
                         <a href="mailto:glasses@business.com" class="md:text-2xl">
                             <span>glasses@business.com</span>
                         </a>
@@ -222,6 +246,14 @@
 </footer>
 <script src="./assets/js/vendors.js"></script>
 <script src="./assets/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    // 當漢堡 icon 被點擊時，為有 .dropdown class 的元素增加/移除 .active class
+    $('.menu').click(function (e) {
+        e.preventDefault();
+        $('.dropdown').toggleClass('max-h-[100px]')
+    })
+</script>
 </body>
 
 </html>
