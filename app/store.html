@@ -1,0 +1,47 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: store
+---
+
+<section class="container pt-10 mb-6 md:pt-20 md:mb-10">
+    <h1 class="text-xl font-bold border-l-8 border-l-maroon pl-4 -ml-1 mb-6 md:text-3xl md:mb-8">門市據點</h1>
+    <div class="flex items-center">
+        <label for="district" class="mr-2 md:text-xl md:mr-4">選擇分店</label>
+        <select name="district" id="district" class="border-[#CED4DA] grow md:w-2/5 md:grow-0 lg:w-1/4">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+            <option value="台北綠園店">台北綠園店</option>
+            <option value="台中清水旗艦店">台中清水旗艦店</option>
+            <option value="高雄中正形象店">高雄中正形象店</option>
+            <option value="高雄夢時代店">高雄夢時代店</option>
+        </select>
+    </div>
+</section>
+
+<section class="container pb-16 md:pb-20 lg:flex lg:justify-between lg:space-x-6">
+    <div class="mb-6 md:flex md:justify-between lg:block lg:w-5/12">
+        <img src="./assets/images/storepage-1.png" alt="storepage-1" class="md:block md:w-[48%] lg:w-full">
+        <div class="md:w-[48%] lg:w-full">
+            <h2 class="text-xl pl-6 py-2 border border-t border-[#00000020]">台北中山旗艦店</h2>
+            <ul class="flex flex-col justify-center px-6 border-x border-b border-[#00000020] py-4">
+                <li class="flex text-lg mb-2">
+                    <span class="material-symbols-outlined mr-2">call</span>
+                    電話：(02)000-1234
+                </li>
+                <li class="flex text-lg mb-2">
+                    <span class="material-symbols-outlined mr-2">schedule</span>
+                    營業時間：10:00-21:00
+                </li>
+                <li class="flex text-lg">
+                    <span class="material-symbols-outlined mr-2">location_on</span>
+                    地址：台北市中山區南京東路25巷2-1號
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="lg:w-7/12">
+        <img src="./assets/images/map-sm.png" alt="map" class="block md:hidden">
+        <img src="./assets/images/map.png" alt="map" class="hidden md:block">
+    </div>
+</section>
