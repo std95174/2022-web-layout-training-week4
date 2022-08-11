@@ -14,3 +14,9 @@
         vertical-align: middle;
     }
 }
+
+@layer utilities{
+    .active{
+        max-height: 100px;
+    }
+}
