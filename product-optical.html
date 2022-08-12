@@ -20,23 +20,23 @@
             <img src="assets/images/logo-white.png" alt="logo">
         </a>
         <a href="#" class="menu block md:hidden">
-            <span class="material-symbols-outlined text-white text-[40px]">menu</span>
+            <span class="menu-icon material-symbols-outlined text-white text-[40px]">menu</span>
         </a>
-        <ul class="dropdown absolute left-0 top-full w-full max-h-0 transition-all duration-500 overflow-hidden bg-maroon flex flex-wrap md:text-lg">
-            <li class="border border-white w-1/2 text-center py-3">
+        <ul class="dropdown absolute left-0 top-full w-full max-h-0 transition-all duration-500 overflow-hidden bg-maroon flex flex-wrap md:max-h-fit md:flex-nowrap md:static md:w-auto md:text-lg">
+            <li class="border border-white w-1/2 md:border-0 text-center py-3 md:w-auto">
                 <a class="text-white block hover:opacity-40 px-8"
                    href="product-optical.html">系列鏡框</a>
             </li>
-            <li class="border border-l-0 border-white w-1/2 text-center py-3" >
+            <li class="border border-l-0 border-white w-1/2 md:border-0 text-center py-3 md:w-auto">
                 <a class="text-white block hover:opacity-40 px-8"
                    href="stores.html">門市據點</a>
             </li>
-            <li class="border border-white w-1/2 text-center py-3">
+            <li class="border border-white w-1/2 md:border-0 text-center py-3 md:w-auto">
                 <a class="text-white block hover:opacity-40 px-8"
                    href="blogs.html">部落格</a>
             </li>
-            <li class="border border-l-0 border-white w-1/2 text-center py-3">
-                <a class="text-white block hover:opacity-40 pl-8"
+            <li class="border border-l-0 border-white w-1/2 md:border-0 md:w-auto text-center py-3">
+                <a class="text-white block hover:opacity-40 md:pl-8"
                    href="questions.html">常見問題</a>
             </li>
         </ul>
@@ -336,10 +336,13 @@
 <script src="./assets/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+    let isOpen = false;
     // 當漢堡 icon 被點擊時，為有 .dropdown class 的元素增加/移除 .active class
     $('.menu').click(function (e) {
         e.preventDefault();
         $('.dropdown').toggleClass('max-h-[100px]')
+        isOpen = !isOpen;
+        isOpen ? $('.menu-icon')[0].innerHTML = 'close' : $('.menu-icon')[0].innerHTML = 'menu';
     })
 </script>
 </body>

@@ -1042,9 +1042,6 @@ select {
 .pl-3 {
   padding-left: 0.75rem;
 }
-.pl-8 {
-  padding-left: 2rem;
-}
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1213,6 +1210,10 @@ select {
     }
   }
 
+  .md\:static {
+    position: static;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1296,6 +1297,12 @@ select {
     height: 414px;
   }
 
+  .md\:max-h-fit {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1314,6 +1321,10 @@ select {
 
   .md\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:w-10 {
@@ -1339,6 +1350,11 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .md\:items-start {
@@ -1389,6 +1405,10 @@ select {
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:border-0 {
+    border-width: 0px;
+  }
+
   .md\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/index-bg-md\.png\'\)\] {
     background-image: url('../../assets/images/index-bg-md.png');
   }
@@ -1416,6 +1436,10 @@ select {
 
   .md\:pl-3 {
     padding-left: 0.75rem;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
   }
 
   .md\:pb-10 {
